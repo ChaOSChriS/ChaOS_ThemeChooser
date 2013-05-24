@@ -14,16 +14,16 @@ How To Compile:
 If you want to compile this you need to configure the Webdatabase string (AndroidXMLParsing -> static final String URL = "server/theme database xml" )
 replace this "server/theme database xml" with your server path to the xml.
 
-xml should look like this
+xml structure:
 
-<menu>
-<item>
-<id>1</id>
-<name>name</name>
-<cost>url to screenshot</cost>
-<description>description</description>
-<dl>download url</dl>
-</item>
-</menu>
+menu
+item
+id [Theme id]
+name [Theme name]
+cost [Theme screen url]
+description [Theme description]
+dl [Theme download url]
+/item
+/menu
 
 Notice!: If you want to use this Project for your Rom or what ever ask me for permissions (chaosware19@gmail.com) or @XDA (http://forum.xda-developers.com/member.php?u=4056635)
