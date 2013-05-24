@@ -4,7 +4,7 @@ ChaOS_ThemeChooser
 Theme Chooser app for ChaOS Rom
 
 Base App:
-Read themes from an webdatabase (xml) (Name/Description/Screenshot/Downloadlink)
+Read themes from an webdatabase (xml) (Name/Description/Screenshot/Downloadlink) 
 Provide an UI to download and install the theme (Reboot to recovery)
 Save feature (App runs only on ypgi1)
 
@@ -15,15 +15,6 @@ If you want to compile this you need to configure the Webdatabase string (Androi
 replace this "server/theme database xml" with your server path to the xml.
 
 xml structure:
-
-menu
-item
-id [Theme id]
-name [Theme name]
-cost [Theme screen url]
-description [Theme description]
-dl [Theme download url]
-/item
-/menu
+http://pastebin.com/eLtPCHa4
 
 Notice!: If you want to use this Project for your Rom or what ever ask me for permissions (chaosware19@gmail.com) or @XDA (http://forum.xda-developers.com/member.php?u=4056635)
