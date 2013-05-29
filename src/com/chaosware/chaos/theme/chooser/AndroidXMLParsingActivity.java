@@ -17,6 +17,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListAdapter;
@@ -42,6 +43,12 @@ public class AndroidXMLParsingActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		WebView wv = (WebView) findViewById(R.id.webView1);
+		 wv.getSettings().setBuiltInZoomControls(false);
+		 wv.getSettings().setJavaScriptEnabled(true); 
+		 wv.loadUrl("url to advertisement ");
+		
         String line = "";
         String CorrectDevice = "YP-GI1";
         try {
@@ -56,13 +63,14 @@ public class AndroidXMLParsingActivity extends ListActivity {
         IncorrectDevice.setMessage("You are probably not running this application on the Galaxy Player 4.2 (YP-GI1). Please note that this application is only meant to run on the Galaxy Player 4.2 (YP-GI1).");
         IncorrectDevice.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
-			finish();
+		finish();
 			
 			}});
         IncorrectDevice.show();
         } 
 		
-		
+        
+        
 		ArrayList<HashMap<String, String>> menuItems = new ArrayList<HashMap<String, String>>();
 
 		XMLParser parser = new XMLParser();
@@ -109,5 +117,6 @@ public class AndroidXMLParsingActivity extends ListActivity {
 
 			}
 		});
+		
 	}
 }
