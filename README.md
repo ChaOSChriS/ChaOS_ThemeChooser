@@ -13,6 +13,7 @@ How To Compile:
 
 If you want to compile this you need to configure the Webdatabase string (AndroidXMLParsing -> static final String URL = "server/theme database xml" )
 replace this "server/theme database xml" with your server path to the xml.
+And also replace webview load url action (wv.loadUrl("url to advertisement ")) with your advertisement url
 
 xml structure:
 http://pastebin.com/eLtPCHa4
